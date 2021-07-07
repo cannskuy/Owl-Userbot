@@ -109,8 +109,8 @@ CMD_HELP.update({
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.idiot`\
     \n↳ : u're ediot xixixi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `kosong`\
-    \n↳ : Tunggu update selanjutnya kawan."
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cakep`
-    \n↳: insecure
+    \n↳ : Tunggu update selanjutnya kawan.
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cakep`\
+    \n↳: insecure"
 
 })

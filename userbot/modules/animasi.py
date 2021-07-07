@@ -112,6 +112,6 @@ CMD_HELP.update({
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cakep`\
     \n↳: insecure\
 n↳: Tunggu update selanjutnya kawan."
-   
+
 
 })

@@ -89,15 +89,14 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.cakep(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(3)
     await typew.edit("`jangan insecure lo itu cakep di mata orang yang tepat `")
     sleep(3)
-    await typew.edit("┻┳|"
-                     "┳┻|_∧"
-                     "┻┳|•_•｡)stop being insecure!!"
-                     "┳┻|⊂ﾉ"
-                     "┻┳|Ｊ"
-                     "┳┻|")
+    await typew.edit("\n┻┳|"
+                     "\n┳┻|_∧"
+                     "\n┻┳|•_•｡)stop being insecure!!"
+                     "\n┳┻|⊂ﾉ"
+                     "\n┻┳|Ｊ"
+                     "\n┳┻|")
 
 
 CMD_HELP.update({

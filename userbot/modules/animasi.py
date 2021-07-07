@@ -85,6 +85,19 @@ async def typewriter(typew):
                      "\n╭╯╰╯┃╰╯┃╰╯┃╰╯┃╰╮"
                      "\n╰━━━┻━━┻━━┻━━┻━╯")
 
+@register(outgoing=True, pattern='^.cakep(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(3)
+    await typew.edit("`jangan insecure lo itu cakep di mata orang yang tepat `")
+    sleep(3)
+    await typew.edit("┻┳|"
+                     "┳┻|_∧"
+                     "┻┳|•_•｡)stop being insecure!!"
+                     "┳┻|⊂ﾉ"
+                     "┻┳|Ｊ"                    
+                     "┳┻|")
+   
 
 CMD_HELP.update({
     "animasi2":
@@ -96,4 +109,7 @@ CMD_HELP.update({
     \n↳ : u're ediot xixixi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `kosong`\
     \n↳ : Tunggu update selanjutnya kawan."
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.cakep`\
+    \n↳ : insecure\
+
 })

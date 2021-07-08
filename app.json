@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/maspion27/CAN-UBOT",
   "telegram": "https://t.me/inicannn",
-  "success_url": "https://t.me/caritemangobrol",
+  "success_url": "https://t.me/infoseputarbot",
   "stack": "container",
   "env": {
     "API_KEY": {

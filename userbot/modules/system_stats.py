@@ -24,7 +24,7 @@ from userbot import (
     ALIVE_NAME,
     BOT_VER,
     CMD_HELP,
-    ALIVE_TEKS_KUSTOM,
+    ALIVE_TEKS_CUSTOM,
     ALIVE_EMOJI,
     StartTime,
     bot,
@@ -238,7 +238,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"\n__**{ALIVE_TEKS_KUSTOM}**__\n"
+        f"\n__**{ALIVE_TEKS_CUSTOM}**__\n"
         f"**╭───────────────────**\n"
         f"**├[• 🤴 Majikan** \n"
         f"├[•   : `{DEFAULTUSER}` \n"

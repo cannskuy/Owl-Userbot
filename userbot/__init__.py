@@ -466,9 +466,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/dreamingmoon"),
+                                       "t.me/infocanubot"),
                             Button.url("🚨 Group support",
-                                       "t.me/caritemangobrol")],
+                                       "t.me/infoseputarbot")],
                         [Button.url("👤 Development",
                                     "t.me/inicannn")],
                     ]
@@ -554,9 +554,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/dreamingmoon"),
+                                       "t.me/infocanubot"),
                             Button.url("🚨 Group support",
-                                       "t.me/caritemangobrol")],
+                                       "t.me/infoseputarbot")],
                         [custom.Button.inline(
                             "Close", b"close")],
                     ]

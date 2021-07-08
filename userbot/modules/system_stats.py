@@ -24,7 +24,8 @@ from userbot import (
     ALIVE_NAME,
     BOT_VER,
     CMD_HELP,
-    GEEZ_TEKS_KUSTOM,
+    ALIVE_TEKS_KUSTOM,
+    ALIVE_EMOJI,
     StartTime,
     bot,
 )
@@ -237,7 +238,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"\n__**{GEEZ_TEKS_KUSTOM}**__\n"
+        f"\n__**{ALIVE_TEKS_KUSTOM}**__\n"
         f"**╭───────────────────**\n"
         f"**├[• 🤴 Majikan** \n"
         f"├[•   : `{DEFAULTUSER}` \n"
@@ -307,41 +308,30 @@ async def amireallyalive(alive):
 
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
-    user = await bot.get_me()
-    await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Introducing...⭐`")
-    await asyncio.sleep(1)
-    await alive.edit("🐣")
-    await asyncio.sleep(3)
+    await bot.get_me()
+    uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**✠╼━━━━━━❖━━━━━━━✠ ** \n"
-        f"**       🐣𝗖𝗔𝗡 - 𝗨𝗕𝗢𝗧🐣** \n"
-        f"**✠╼━━━━━━❖━━━━━━━✠** \n"
-        f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-        f"┣|• `🤺 Majikan  :`{DEFAULTUSER} \n"
-        f"┣|• `🃏 Username :`@{user.username} \n"
-        f"┣|• `🎠 Telethon :`Ver {version.__version__} \n"
-        f"┣|• `🐿 Python   :`Ver {python_version()} \n"
-        f"╰✠╼━━━━━━❖━━━━━━━✠╯ \n"
-        f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-        f"┣|• `Branch      :`CAN-UBOT \n"
-        f"┣|• `Bot Ver     :`7.0 \n"
-        f"┣|• `Modules     :`{len(modules)} Modules \n"
-        f"╰✠╼━━━━━━❖━━━━━━━✠╯ \n"
-        f"▰▰▰▰▰▰ \n"
-        f"[𝐑𝐄𝐏𝐎](https://github.com/maspion27/CAN-UBOT) || [𝐆𝐑𝐎𝐔𝐏](https://t.me/caritemangobrol) || [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/dreamingmoon)"
-        f"▰▰▰▰▰▰")
+        f"**[Can-Userbot](https://github.com/maspion27/CAN-UBOT) is Up and Running.**\n\n"
+        f"**{ALIVE_TEKS_CUSTOM}**\n\n"
+        f"{ALIVE_EMOJI} **Master :** `{DEFAULTUSER}` \n"
+        f"{ALIVE_EMOJI} **Modules :** `{len(modules)} Modules` \n"
+        f"{ALIVE_EMOJI} **Bot Version :** `{BOT_VER}` \n"
+        f"{ALIVE_EMOJI} **Python Version :** `{python_version()}` \n"
+        f"{ALIVE_EMOJI} **Telethon Version :** `{version.__version__}` \n"
+        f"{ALIVE_EMOJI} **Bot Uptime :** `{uptime}` \n\n"
+        "    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/caritemangobrol)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/dreamingmoon)** | **[𝗢𝘄𝗻𝗲𝗿](t.me/inicannn)**"
+    )
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(500)
+            await asyncio.sleep(800)
             await msg.delete()
         except BaseException:
             await alive.edit(
-                output + "\n\n *`The provided logo is invalid."
-                "\nMake sure the link is directed to the logo picture`"
+                output + "\n\n ***Logo yang diberikan tidak valid."
+                "\nPastikan link diarahkan ke gambar logo**"
             )
             await asyncio.sleep(100)
             await alive.delete()

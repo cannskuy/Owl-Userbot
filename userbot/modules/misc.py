@@ -115,7 +115,7 @@ async def repo_is_here(wannasee):
         "├-------------\n"
         "│🔥 **ᴏᴡɴᴇʀ :** [Can](t.me/inicannn)\n"
         "--------------\n"
-      
+
     )
 
 

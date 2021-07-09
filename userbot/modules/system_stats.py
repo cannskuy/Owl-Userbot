@@ -174,8 +174,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-** 🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣  Versi:** \n "
-            f"heads/CAN-UBOT-0-x634i7u1"
+            "**⚜-** 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉  Versi:** \n "
+            f"heads/Owl-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -275,7 +275,7 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤㅤ🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣    **\n"
+        f"**ㅤㅤㅤㅤ🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉    **\n"
         f"╔══════════╬════╬══════════╗ \n"
         f"╟⟩⟩ ☠️ • `𝘰𝘸𝘯𝘦𝘳    :`[CAN](t.me/inicannn)             ㅤ ║\n"
         f"╟⟩⟩ 💻 • `𝘴𝘺𝘴𝘵𝘦𝘮    :`Ubuntu 20.10            ║\n"
@@ -284,7 +284,7 @@ async def amireallyalive(alive):
         f"╟⟩⟩ 🧞‍♂️ • `𝘣𝘰𝘵      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📚 • `𝘮𝘰𝘥𝘶𝘭𝘦   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔥 : [𝗥𝗘𝗣𝗢-Can](https://github.com/maspion27/CAN-UBOT)\n👥 : [GROUP SUPORT](t.me/infoseputarbot)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/infocanubot)\n"
+        f"🔥 : [𝗥𝗘𝗣𝗢-Can](https://github.com/maspion27/Owl-Userbot)\n👥 : [GROUP SUPORT](t.me/infoseputarbot)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/infocanubot)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -311,7 +311,7 @@ async def amireallyalive(alive):
     await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**[Can-Userbot](https://github.com/maspion27/CAN-UBOT) is Up and Running.**\n\n"
+        f"**[Owl-Userbot](https://github.com/maspion27/Owl-Userbot) is Up and Running.**\n\n"
         f"**{ALIVE_TEKS_CUSTOM}**\n\n"
         f"{ALIVE_EMOJI} **Master :** `{DEFAULTUSER}` \n"
         f"{ALIVE_EMOJI} **Modules :** `{len(modules)} Modules` \n"

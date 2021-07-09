@@ -1,4 +1,4 @@
-<p align="center"> 🐣  𝗪𝗵𝗶𝗰𝗵 𝗶𝘀 𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗕𝗮𝘀𝗲𝗱 🐣 </p>
+<p align="center"> 🦉  𝗪𝗵𝗶𝗰𝗵 𝗶𝘀 𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗕𝗮𝘀𝗲𝗱 🦉 </p>
 <p align="left">
   <a href="https://github.com/maspion27/CAN-UBOT/fork"><img src="https://img.shields.io/github/forks/maspion27/CAN-UBOT?label=Fork&style=social"></a>
   </p>

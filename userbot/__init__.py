@@ -101,9 +101,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/maspion27/CAN-UBOT")
+    "https://github.com/maspion27/Owl-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "CAN-UBOT")
+    "UPSTREAM_REPO_BRANCH", "Owl-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -193,7 +193,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "CAN-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Owl-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "5.0")
@@ -496,26 +496,26 @@ with bot:
                 result = builder.photo(
                     file=geezlogo,
                     link_preview=False,
-                    text=f" 🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣 \n\n 🐣 **Owner : {DEFAULTUSER}**\n\n 🐣  **Bot Ver :** `5.0`\n 🐣  **𝗠odules :** `{len(plugins)}`\n\n 🐣  **Dev : CAN **".format(
+                    text=f" 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 \n\n 🦉 **Owner : {DEFAULTUSER}**\n\n 🦉  **Bot Ver :** `5.0`\n 🦉  **𝗠odules :** `{len(plugins)}`\n\n 🦉  **Dev : CAN **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari 🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣 ",
+                    "Bantuan Dari 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " 🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣 ",
-                    text="""**🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣\n\n Anda Bisa Membuat CAN-UBOT Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 ",
+                    text="""**🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉\n\n Anda Bisa Membuat Owl-Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣",
-                                "https://github.com/maspion27/CAN-UBOT"),
+                                "🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉",
+                                "https://github.com/maspion27/Owl-Userbot"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/inicannn")]],

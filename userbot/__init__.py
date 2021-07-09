@@ -174,7 +174,7 @@ ALIVE_TEKS_CUSTOM = os.environ.get(
     "eyyo, I am still alive.")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "🐣")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "🦉")
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -352,7 +352,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```Yowwadisap...  🐣 𝗖𝗔𝗡-𝗨𝗕𝗢𝗧 🐣  Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```Yowwadisap...  🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉  Aktif brader```")
     return
 
 with bot:

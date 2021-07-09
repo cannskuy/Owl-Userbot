@@ -13,9 +13,9 @@
 ![Repo Size](https://img.shields.io/github/repo-size/maspion27/Owl-Userbot?&style=plastic&logo=github)
 [![GitHub issues](https://img.shields.io/github/issues/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/maspion27/CAN-UBOT?&style=plastic&logo=github)](https://GitHub.com/maspion27/Owl-Userbot/graphs/contributors/)
-[![PR Open](https://img.shields.io/github/issues-pr/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/CAN-UBOT/pulls)
-[![PR Closed](https://img.shields.io/github/issues-pr-closed/maspion27/CAN-UBOT?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/pulls?q=is:closed)
+[![GitHub contributors](https://img.shields.io/github/contributors/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://GitHub.com/maspion27/Owl-Userbot/graphs/contributors/)
+[![PR Open](https://img.shields.io/github/issues-pr/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/pulls)
+[![PR Closed](https://img.shields.io/github/issues-pr-closed/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/pulls?q=is:closed)
 <p align="justify">
 <a href="https://github.com/maspion27/Owl-Userbot/commits/Owl-Userbot"><img src="https://img.shields.io/github/last-commit/maspion27/Owl-Userbot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
 <a href="https://github.com/maspion27/Owl-Userbot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/maspion27/Owl-Userbot/CI/Owl-Userbot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>

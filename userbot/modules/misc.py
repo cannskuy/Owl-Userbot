@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/vckyou/Geez-UserBot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/maspion27/Owl-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan CAN-UBOT....`")
+    await event.edit("`Mematikan Owl-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡ CAN-UBOT Repo](https://github.com/maspion27/CAN-UBOT/blob/CAN-UBOT/README.md)"
+        "\n[🦉 Owl-Userbot Repo](https://github.com/maspion27/Owl-Userbot/blob/Owl-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -112,11 +112,11 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "╭‒─‒──────────‒─‒╮\n"
         "│                   𝐑𝐄𝐏𝐎\n"
-        "│       [🐣CAN-UBOT🐣](https://github.com/maspion27/CAN-UBOT)\n"
+        "│       [🦉Owl-Userbot🦉](https://github.com/maspion27/Owl-Userbot)\n"
         "├‒─‒──────────‒─‒╯\n"
         "│🔥 **ᴏᴡɴᴇʀ :** [Can](t.me/inicannn)\n"
         "╰‒─‒──────────‒─‒╯\n"
-        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/maspion27/CAN-UBOT/blob/CAN-UBOT/LICENSE)"
+        "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/maspion27/Owl-Userbot/blob/Owl-Userbot/LICENSE)"
     )
 
 

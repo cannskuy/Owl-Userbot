@@ -208,7 +208,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari 🐣CAN-UBOT🐣.__')
+        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari 🦉Owl-Userbot🦉.__')
 
     if force_update:
         await event.edit(
@@ -234,9 +234,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
-    "\n• : Untuk Melihat Pembaruan Terbaru CAN-UBOT."
+    "\n• : Untuk Melihat Pembaruan Terbaru Owl-Userbot."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update now`"
-    "\n• : Memperbarui CAN-UBOT."
+    "\n• : Memperbarui Owl-Userbot."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update deploy`"
-    "\n• : Memperbarui CAN-UBOT Dengan Cara Men-Deploy Ulang."
+    "\n• : Memperbarui Owl-Userbot Dengan Cara Men-Deploy Ulang."
 })

@@ -1,6 +1,6 @@
 {
-  "name": "🐣CAN-UBOT🐣",
-  "description": "🚫CAN-UBOT🚫 USERBOT YANG DIBUAT KARNA GABUT SEMATA.",
+  "name": "🦉Owl-Userbot🦉",
+  "description": "🚫Owl-Userbot🚫 USERBOT YANG DIBUAT KARNA GABUT SEMATA.",
   "logo": "",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/maspion27/CAN-UBOT",
+  "repository": "https://github.com/maspion27/Owl-Userbot",
   "telegram": "https://t.me/inicannn",
   "success_url": "https://t.me/infoseputarbot",
   "stack": "container",

@@ -124,10 +124,10 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**✣**")
-    await pong.edit("**✣✣**")
-    await pong.edit("**✣✣✣**")
-    await pong.edit("**✣✣✣✣**")
+    await pong.edit("**✠**")
+    await pong.edit("**✠✠**")
+    await pong.edit("**✠✠✠**")
+    await pong.edit("**✠✠✠✠**")
     await pong.edit("🐣")
     await asyncio.sleep(3)
     end = datetime.now()
@@ -143,7 +143,7 @@ async def redis(pong):
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """
-    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu... 🐣 `")
+    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu... 🦉 `")
     test = Speedtest()
 
     test.get_best_server()

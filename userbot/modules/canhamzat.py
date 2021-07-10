@@ -22,7 +22,7 @@ async def _(hazmat):
         await hazmat.edit("`Kata Bisa Menghancurkan Apapun`")
         return
     chat = "@hazmat_suit_bot"
-    await hazmat.edit("```Perintah Hazmat Diaktifkan, Sedang Memproses....```")
+    await hazmat.edit("```Perintah hazmat diaktifkan, Sedang Memproses....```")
     message_id_to_reply = hazmat.message.reply_to_msg_id
     msg_reply = None
     async with hazmat.client.conversation(chat) as conv:

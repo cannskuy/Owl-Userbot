@@ -1,13 +1,4 @@
-<p align="center"> 🦉  𝗪𝗵𝗶𝗰𝗵 𝗶𝘀 𝗧𝗲𝗹𝗲𝘁𝗵𝗼𝗻 𝗕𝗮𝘀𝗲𝗱 🦉 </p>
-<p align="left">
-  <a href="https://github.com/maspion27/Owl-Userbot/fork"><img src="https://img.shields.io/github/forks/maspion27/Owl-Userbot?label=Fork&style=social"></a>
-  </p>
-<p align="left">
-  <a href="https://github.com/maspion27/Owl-Userbot"><img src="https://img.shields.io/github/stars/maspion27/Owl-Userbot?style=social"></a>
-  </p>
-<p align="left">
-  <a href="https://github.com/maspion27/Owl-Userbot/blob/Owl-Userbot/LICENSE"><img src="https://img.shields.io/github/license/maspion27/Owl-Userbot?&style=social&logo=github">
-  </a></p>
+<a href="https://cooltext.com"><img src="https://images.cooltext.com/5540661.gif" width="802" height="96" alt="King Userbot" /></a>
 
 ![VIEWS](https://komarev.com/ghpvc/?username=maspion27)
 ![Repo Size](https://img.shields.io/github/repo-size/maspion27/Owl-Userbot?&style=plastic&logo=github)
@@ -26,26 +17,30 @@
 </p>
 <p align="left">
 </p>
-<a href="https://t.me/GeezSupportGroup"><img src="https://img.shields.io/badge/Join-Group1%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/VcgSupportGroup"><img src="https://img.shields.io/badge/Join-Group2%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+
+<p align="left">
+  <a href="https://github.com/maspion27/Owl-Userbot/fork"><img src="https://img.shields.io/github/forks/maspion27/Owl-Userbot?label=Fork&style=social"></a>
+  </p>
+<p align="left">
+  <a href="https://github.com/maspion27/Owl-Userbot"><img src="https://img.shields.io/github/stars/maspion27/Owl-Userbot?style=social"></a>
+  </p>
+<p align="left">
+  <a href="https://github.com/maspion27/Owl-Userbot/blob/Owl-Userbot/LICENSE"><img src="https://img.shields.io/github/license/maspion27/Owl-Userbot?&style=social&logo=github">
+  </a></p>
 
 ##  🦉 Owl-Userbot 🦉 
-![Owl-Userbot](https://telegra.ph/file/cc9b45e639efe047ce719.png)
-
-<h3 align="center">USERBOT YANG DI BIKIN SECARA TIDAK SENGAJA DAN TIBA TIBA.</h3>
-<p align="center">&nbsp;</p>
-
+![Owl-Userbot](https://telegra.ph/file/229e413e9cd607e04cc80.jpg)
 
 ### 🛠️ How To Get a STRING SESSION ?
 
 **Generate String Using Replit⤵️**
 
-<a href="https://replit.com/@Vckyou/Geez-String-Session#main.py"><img src="https://img.shields.io/badge/run-string__session.py-magenta?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
+<a href="https://replit.com/@Vckyou/Geez-String-Session#main.py"><img src="https://img.shields.io/badge/run-string__session.py-lightgreen?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
 
 ## <p align="center">DEPLOY TO HEROKU</p>
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/maspion27/Owl-Userbot/tree/Owl-Userbot">
-  <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-pink?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+  <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 <br>
 </p>

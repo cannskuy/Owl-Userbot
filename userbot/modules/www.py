@@ -58,8 +58,8 @@ async def redis(pong):
     await pong.edit(f"**╭━━━━━━━━━━━━━━━━━╮** \n"
                     f"**          - 𝐍 𝐄 𝐓 𝐖 𝐎 𝐑 𝐊 -** \n"
                     f"**   ▰▱▰▱▰▱▰▱▰▱▰▱** \n"
-                    f"**        • ꜱɪɢɴᴀʟ  :** `%sms` \n"
-                    f"**        • ᴏᴡɴᴇʀ   :** `{ALIVE_NAME}` \n"
+                    f"**        ✠ ꜱɪɢɴᴀʟ  :** `%sms` \n"
+                    f"**        ✠ ᴏᴡɴᴇʀ   :** `{ALIVE_NAME}` \n"
                     f"**╰━━━━━━━━━━━━━━━━━╯** \n" % (duration))
 
 
@@ -72,9 +72,9 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**`{ALIVE_NAME}`**\n"
-                    f"✧ **-ꜱɪɢɴᴀʟ- :** "
+                    f"✠ **-ꜱɪɢɴᴀʟ- :** "
                     f"`%sms` \n"
-                    f"✧ **-ᴜᴘᴛɪᴍᴇ- :** "
+                    f"✠ **-ᴜᴘᴛɪᴍᴇ- :** "
                     f"`{uptime}` \n" % (duration))
 
 
@@ -83,15 +83,11 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("__Connecting to data center.__")
-    await pong.edit("__Connecting to data center..__")
-    await pong.edit("__Connecting to data center...__")
-    await pong.edit("__Connecting to data center.__")
-    await pong.edit("__Connecting to data center..__")
-    await pong.edit("__Connecting to data center...__")
-    await pong.edit("__Connecting to data center.__")
-    await pong.edit("__Connecting to data center..__")
-    await pong.edit("__Connecting to data center...__")
+    await pong.edit("Cek koneksi dlu breee sabar")
+    await pong.edit("Menyambungkan ke koneksi")
+    await pong.edit("Koneksi terhubung")
+    await pong.edit("Pam pam parampam")
+    await pong.edit("Tring tring tring")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉**\n"
@@ -116,11 +112,11 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉**\n\n"
-                    f"** ▹  Sɪɢɴᴀʟ   :** "
+                    f"** ✠  Sɪɢɴᴀʟ   :** "
                     f"`%sms` \n"
-                    f"** ▹  Uᴘᴛɪᴍᴇ  :** "
+                    f"** ✠  Uᴘᴛɪᴍᴇ  :** "
                     f"`{uptime}` \n"
-                    f"** ▹  Oᴡɴᴇʀ   :** `{ALIVE_NAME}` \n" % (duration))
+                    f"** ✠  Oᴡɴᴇʀ   :** `{ALIVE_NAME}` \n" % (duration))
 
 
 @register(outgoing=True, pattern="^.ping$")
@@ -138,8 +134,8 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**PING PONG!!🏓**\n"
-        f"✣ **Pinger** - `%sms`\n"
-        f"✣ **Uptime -** `{uptime}` \n"
+        f"✠ **Pinger** - `%sms`\n"
+        f"✠ **Uptime -** `{uptime}` \n"
         f"**✦҈͜͡Onner :** `{ALIVE_NAME}`" % (duration)
     )
 

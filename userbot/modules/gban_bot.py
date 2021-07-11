@@ -1,3 +1,4 @@
+# owl
 """Globally Ban users from all the
 Group Administrations bots where you are SUDO
 Available Commands:

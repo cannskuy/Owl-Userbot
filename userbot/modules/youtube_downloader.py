@@ -1,5 +1,5 @@
-# Ported By @VckyouuBitch From Geez - Projects
-# Copyright © Geez - Projects
+# Ported By @inicannn From About - userbot
+# Copyright © About - userbot
 
 
 from youtube_dl import YoutubeDL

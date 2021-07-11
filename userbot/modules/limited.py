@@ -1,4 +1,4 @@
-# Credits By @VckyouuBitch From Geez - Project
+# Credits By @inicannn From About - userbot
 # BUATLO NI ANAK ANAK ANJING YANG KALO NGAMBIL MODUL DENGAN HAPUS CREDITS.
 # INTINYA LO ANJING!!!!!!
 

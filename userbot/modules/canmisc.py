@@ -1031,7 +1031,7 @@ async def _(event):
 CMD_HELP.update({
     "misc":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.app`\
-\n↳ : ketik `.app namaapp` Dan Dapatkan Detail Informasi App.\
+\n↳ : ketik `.app namaapp` dan Dapatkan Detail Informasi App.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.undlt`\
 \n↳ : urungkan pesan yang dihapus tetapi Anda harus menjadi admin.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.calc`\

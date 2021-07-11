@@ -5,7 +5,6 @@ except ImportError:
 
 from sqlalchemy import Column, Numeric, UnicodeText
 
-
 class Snips(BASE):
     __tablename__ = "snips"
     snip = Column(UnicodeText, primary_key=True)

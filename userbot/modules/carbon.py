@@ -1,4 +1,4 @@
-# Ported By @VckyouuBitch From Geez-Projects
+# Ported By @can From about-userbot
 # Fixes BUGS, HEHE USAHA MEMANG TIDAK MENGHIANATI HASIL:)
 
 

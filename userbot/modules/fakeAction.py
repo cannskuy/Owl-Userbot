@@ -1,5 +1,5 @@
-# Port By @VckyouuBitch From Geez-Projects
-# # Copyright (C) 2021 Geez-Project
+# Port By @can From About-userbot
+# # Copyright (C) 2021 About-userbot
 from userbot.events import register
 from userbot import CMD_HELP
 import asyncio

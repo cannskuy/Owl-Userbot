@@ -5,7 +5,6 @@ except ImportError:
 
 from sqlalchemy import Column, String
 
-
 class KRead(BASE):
     __tablename__ = "kread"
     groupid = Column(String(14), primary_key=True)

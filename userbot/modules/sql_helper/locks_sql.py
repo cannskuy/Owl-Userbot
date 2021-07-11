@@ -2,7 +2,6 @@ from sqlalchemy import Boolean, Column, String
 
 from userbot.modules.sql_helper import BASE, SESSION
 
-
 class Locks(BASE):
     __tablename__ = "locks"
     chat_id = Column(String(14), primary_key=True)

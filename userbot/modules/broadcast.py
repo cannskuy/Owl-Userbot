@@ -1,7 +1,7 @@
 # Credit by https://github.com/sandy1709/catuserbot
 # Ported by @X_ImFine
-# Recode by @VckyouuBitch
-# From Geez - Project
+# Recode by @can
+# From about-userbot
 
 import base64
 from asyncio import sleep

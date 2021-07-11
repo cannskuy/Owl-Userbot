@@ -1,5 +1,5 @@
-# Ported By @VckyouuBitch From Geez - Projects
-# Copyright © Team Geez - Project
+# Ported By @inicannn From About - userbot
+# Copyright © Team About - userbot
 
 from telethon.tl import functions
 from telethon.tl.functions.messages import GetFullChatRequest

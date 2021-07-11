@@ -1,7 +1,7 @@
 # Thanks Full To Ultroid
-# Ported By @VckyouuBitch
-# Copyright (c) 2021 Geez - Projects
-# Geez - Projects https://github.com/Vckyou/Geez-UserBot
+# Ported By @can
+# Copyright (c) 2021 About-userbot
+# About-userbot https://github.com/maspion27/Owl-Userbot
 
 import json
 import os

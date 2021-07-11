@@ -5,8 +5,7 @@ from userbot.events import register
 from userbot import CMD_HELP
 
 
-# Port By @VckyouuBitch From GeezProject
-# Perkontolan Dengan Hapus Credits
+# Port By @inicannn From Aboutuserbot
 @register(outgoing=True, pattern="^.allban(?: |$)(.*)")
 async def testing(event):
     nikal = await event.get_chat()

@@ -1,5 +1,6 @@
 # fix by @heyworld for OUB
 # bug fixed by @d3athwarrior
+# owl
 
 from telethon.tl.types import InputMediaDice
 from userbot.events import register

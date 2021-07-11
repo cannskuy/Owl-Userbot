@@ -1,6 +1,6 @@
 # Copyright (C) 2020 Adek Maulana.
 # All rights reserved.
-#
+# owl
 # Redistribution and use of this script, with or without modification, is
 # permitted provided that the following conditions are met:
 #

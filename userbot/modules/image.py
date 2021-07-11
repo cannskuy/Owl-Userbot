@@ -1,5 +1,5 @@
-# Ported By VCKYOU @VckyouuBitch
-# Credits © Geez-Project
+# Ported By can @inicannn
+# Credits © About-userbot
 # Ya gitu deh:')
 
 from shutil import rmtree

@@ -94,4 +94,4 @@ def resize_image(image):
 
 
 CMD_HELP.update({"telegraph": ">`.tg` <m|t>"
-                 "\nUsage: Mengunggah t(Teks) Atau m(Media) Ke Telegraph."})
+                 "\nUsage: mengunggah t(Teks) Atau m(Media) Ke Telegraph."})

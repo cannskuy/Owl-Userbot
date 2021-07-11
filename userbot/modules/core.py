@@ -1,5 +1,5 @@
 # Recode By @mrismanaziz
-# FROM Geez-Project
+# FROM About-userbot
 
 import importlib
 import logging

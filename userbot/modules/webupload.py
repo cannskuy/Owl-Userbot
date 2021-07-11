@@ -1,6 +1,7 @@
 # credits: SNAPDRAGON (@s_n_a_p_s)
 # originally from xtra-telegram
 # ported by @heyworld
+# owl
 
 import asyncio
 import time

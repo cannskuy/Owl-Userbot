@@ -1,8 +1,8 @@
 from userbot.events import register
 from userbot import CMD_HELP
 
-# Ported By @VckyouuBitch From GeezProject
-# Devoted To GeezProject
+# Ported By @can From Aboutuserbot
+# Devoted To Aboutuserbot
 
 
 @register(outgoing=True, pattern=r"^\.(?:dm)\s?(.*)?")

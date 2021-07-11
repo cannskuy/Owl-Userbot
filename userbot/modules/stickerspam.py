@@ -1,7 +1,6 @@
-# Ported By Vicky @VckyouuBitch From Geez - Projects
-# Copyright © Geez - Project
-# Kalo mau dihargai, jangan hapus kredit yakak:)
-# https://github.com/Vckyou/Geez-UserBot
+# Ported By can @inicannn From About - userbot
+# Copyright © About - userbot
+# https://github.com/maspion27/Owl-Userbot
 
 import asyncio
 import base64

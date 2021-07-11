@@ -1,7 +1,7 @@
-# Credits By @VckyouuBitch From Geez-Project
+# Credits By @inicannn From About-userbot
 # Tolong Haragai ya:)
 # Kalo emg Bisa Menghargai seseorang pasti pahamm la ya:)
-# Credits © Geez - Projects
+# Credits © About - userbot
 
 import os
 

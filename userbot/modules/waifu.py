@@ -1,6 +1,7 @@
 # imported from ppe-remix by @heyworld & @DeletedUser420
 # Based Code by @adekmaulana
 # Improve by @aidilaryanto
+# owl
 from asyncio import sleep
 import re
 import random

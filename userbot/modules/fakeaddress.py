@@ -6,7 +6,7 @@ from userbot.events import register
 from userbot import CMD_HELP
 
 
-# Port By @VckyouuBitch From GeezProject
+# Port By @can From About-userbot
 # Buat Kamu Yang Hapus Credits. Intinya Kamu Anjing:)
 @register(outgoing=True, pattern="^.ip(?: |$)(.*)")
 async def _(event):

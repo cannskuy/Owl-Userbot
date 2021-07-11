@@ -5,7 +5,6 @@ except ImportError:
 from sqlalchemy import Column, String, UnicodeText
 import threading
 
-
 class BlackListFilters(BASE):
     __tablename__ = "blacklist"
     chat_id = Column(String(14), primary_key=True)

@@ -1,5 +1,5 @@
-# Port By @VckyouuBitch From Geez-Project
-# Credits © Geez - projects
+# Port By @inicannn From About-userbot
+# Credits © About - userbot
 
 import os
 import urllib

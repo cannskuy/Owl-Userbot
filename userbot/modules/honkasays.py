@@ -6,7 +6,7 @@ from userbot import CMD_HELP, bot
 
 @register(outgoing=True, pattern=r"^\.frog (.*)")
 async def honkasays(event):
-    await event.edit("`Sedang Memproses, Mohon Tunggu Sebentar...`")
+    await event.edit("`Sedang Memproses, Mohon tunggu Sebentar...`")
     text = event.pattern_match.group(1)
     if not text:
         return await event.edit("Beri Aku Bebeberapa Text, Contoh : `.honka space <text>`")

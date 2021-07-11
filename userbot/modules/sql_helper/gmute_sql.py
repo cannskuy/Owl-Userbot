@@ -5,6 +5,7 @@ except ImportError:
 
 from sqlalchemy import Column, String
 
+
 class GMute(BASE):
     __tablename__ = "gmute"
     sender = Column(String(14), primary_key=True)

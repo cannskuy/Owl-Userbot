@@ -4,6 +4,7 @@ except ImportError:
     raise AttributeError
 from sqlalchemy import Column, String
 
+
 class PMPermit(BASE):
     __tablename__ = "pmpermit"
     chat_id = Column(String(14), primary_key=True)

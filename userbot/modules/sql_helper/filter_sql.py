@@ -4,6 +4,7 @@ except ImportError:
     raise AttributeError
 from sqlalchemy import Column, UnicodeText, Numeric, String
 
+
 class Filters(BASE):
     __tablename__ = "filters"
     chat_id = Column(String(14), primary_key=True)

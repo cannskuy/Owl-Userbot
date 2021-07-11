@@ -5,6 +5,7 @@ except ImportError:
 
 from sqlalchemy import Column, String
 
+
 class Mute(BASE):
     __tablename__ = "mute"
     sender = Column(String(14), primary_key=True)

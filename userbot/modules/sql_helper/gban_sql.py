@@ -2,6 +2,7 @@ from sqlalchemy import Column, String
 
 from userbot.modules.sql_helper import BASE, SESSION
 
+
 class GBan(BASE):
     __tablename__ = "gban"
     chat_id = Column(String(14), primary_key=True)

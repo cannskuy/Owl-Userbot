@@ -5,6 +5,7 @@ except ImportError:
 
 from sqlalchemy import Column, String, UnicodeText
 
+
 class Fban(BASE):
     __tablename__ = "fban"
     chat_id = Column(String(14), primary_key=True)

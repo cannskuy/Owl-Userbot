@@ -9,6 +9,7 @@ DEF_COUNT = 0
 DEF_LIMIT = 0
 DEF_OBJ = (None, DEF_COUNT, DEF_LIMIT)
 
+
 class FloodControl(BASE):
     __tablename__ = "antiflood"
     chat_id = Column(String(14), primary_key=True)

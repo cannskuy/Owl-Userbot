@@ -5,6 +5,7 @@ from userbot import DB_URI
 
 BASE = declarative_base()
 
+
 def start() -> scoped_session:
     engine = create_engine(DB_URI)
     BASE.metadata.bind = engine

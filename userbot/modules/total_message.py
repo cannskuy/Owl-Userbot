@@ -2,8 +2,7 @@ from userbot.events import register
 from userbot import CMD_HELP, bot
 
 
-# Port By @VckyouuBitch From GeezProject
-# Untuk Siapapun Yang Hapus Credits Ini, Kamu Anjing:)
+# Port By @inicannn From Aboutuserbot
 @register(outgoing=True, pattern=r"^\.tmsg (.*)")
 async def _(event):
     k = await event.get_reply_message()

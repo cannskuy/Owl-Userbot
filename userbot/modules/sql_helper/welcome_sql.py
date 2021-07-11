@@ -5,7 +5,6 @@ except ImportError:
 
 from sqlalchemy import BigInteger, Column, Numeric, String, UnicodeText
 
-
 class Welcome(BASE):
     __tablename__ = "welcome"
     chat_id = Column(String(14), primary_key=True)

@@ -5,7 +5,6 @@ except ImportError:
 import threading
 from sqlalchemy import Integer, Column, String, UnicodeText, func, distinct, Boolean
 
-
 class Warns(BASE):
     __tablename__ = "warns"
 

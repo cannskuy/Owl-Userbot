@@ -25,10 +25,10 @@ async def typewriter(typew):
     await typew.edit("𝘈𝘴𝘴𝘢𝘭𝘢𝘮𝘶'𝘢𝘭𝘢𝘪𝘬𝘶𝘮 𝘴𝘢𝘺𝘢𝘯𝘨")
 
 
-@register(outgoing=True, pattern='^.L(?: |$)(.*)')
+@register(outgoing=True, pattern='^.l(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Wa'alaikumssalam wr. wb.`")
+    await typew.edit("𝘞𝘢𝘢𝘭𝘢𝘪𝘬𝘶𝘮𝘴𝘢𝘭𝘢𝘮 𝘣𝘳𝘢𝘥𝘴")
 
 
 @register(outgoing=True, pattern='^L(?: |$)(.*)')

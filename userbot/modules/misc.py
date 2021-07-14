@@ -112,7 +112,7 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "--------------\n"
         "│    ʀᴇᴘᴏ   : [🦉Owl-Userbot🦉](https://github.com/maspion27/Owl-Userbot)\n"
-        "├-------------\n"
+        "--------------\n"
         "│🔥 **ᴏᴡɴᴇʀ :** [Can](t.me/inicannn)\n"
         "--------------\n"
 

@@ -384,6 +384,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 5
     number_of_cols = 2
+    global lockpage
+    lockpage = page_number
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
@@ -452,7 +454,7 @@ with bot:
                     "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
                 )
 
-        geezlogo = INLINE_PIC
+        owllogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -461,8 +463,7 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**Can - Project**\nKalo mau tau lebih lanjut silahkan Join Ke \n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
-
+                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**Geez - Project**\nKalo mau tau lebih lanjut silahkan Join Ke \n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
@@ -485,18 +486,32 @@ with bot:
                     f"**PONG!!**\n `{ms}ms`",
                 )
 
+        @tgbot.on(
+            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                data=re.compile(rb"nepo")
+            )
+        )
+        async def on_plug_in_callback_query_handler(event):
+            current_page_number = int(lockpage)
+            buttons = paginate_help(current_page_number, plugins, "helpme")
+            await event.edit(
+                file=owllogo,
+                buttons=buttons,
+                link_preview=False,
+            )
+
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@dreamingmoon"):
+                    "@Geez-Project"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=geezlogo,
                     link_preview=False,
-                    text=f" 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 \n\n 🦉 **Owner : {DEFAULTUSER}**\n\n 🦉  **Bot Ver :** `5.0`\n 🦉  **𝗠odules :** `{len(plugins)}`\n\n 🦉  **Dev : CAN **".format(
+                     text=f" 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 \n\n 🦉 **Owner : {DEFAULTUSER}**\n\n 🦉  **Bot Ver :** `5.0`\n 🦉  **𝗠odules :** `{len(plugins)}`\n\n 🦉  **Dev : CAN **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -510,7 +525,7 @@ with bot:
             else:
                 result = builder.article(
                     " 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 ",
-                    text="""**🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉\n\n Anda Bisa Membuat Owl-Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    text="""**🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉\n\n Anda Bisa Membuat Geez Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
@@ -549,7 +564,7 @@ with bot:
             if event.query.user_id == uid:  # @Geez-Project
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=geezlogo,
+                    file=owllogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -557,10 +572,18 @@ with bot:
                                        "t.me/infocanubot"),
                             Button.url("🚨 Group support",
                                        "t.me/infoseputarbot")],
+                        [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
                     ]
                 )
+
+        @tgbot.on(events.CallbackQuery(data=b"close"))
+        async def close(event):
+            buttons = [
+                (custom.Button.inline("Open Menu", data="nepo"),),
+            ]
+            await event.edit("Menu Ditutup!", buttons=Button.clear())
 
         @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -613,10 +636,6 @@ with bot:
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @tgbot.on(events.CallbackQuery(data=b"close"))
-        async def close(event):
-            await event.edit("Menu Ditutup!", buttons=Button.clear())
-
     except BaseException:
         LOGS.info(
             "Mode Inline Bot Mu Nonaktif. "
@@ -628,3 +647,4 @@ with bot:
             "BOTLOG_CHATID Environment Variable Isn't a "
             "Valid Entity. Please Check Your Environment variables/config.env File.")
         quit(1)
+        

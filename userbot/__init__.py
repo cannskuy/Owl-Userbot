@@ -384,8 +384,6 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 5
     number_of_cols = 2
-    global unpage
-    unpage = page_number
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
@@ -431,7 +429,30 @@ with bot:
         me = bot.get_me()
         uid = me.id
 
-        owllogo = INLINE_PIC
+        @tgbot.on(
+            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                data=re.compile("open")
+            )
+        )
+        async def opeen(event):
+            try:
+                tgbotusername = BOT_USERNAME
+                if tgbotusername is not None:
+                    results = await event.client.inline_query(tgbotusername, "@dreamingmoon")
+                    await results[0].click(
+                        event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
+                    )
+                    await event.delete()
+                else:
+                    await event.edit(
+                        "`The bot doesn't work! Please set the Bot Token and Username correctly. The module has been stopped.`"
+                    )
+            except Exception:
+                return await event.edit(
+                    "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
+                )
+
+        geezlogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -473,7 +494,7 @@ with bot:
                     "@dreamingmoon"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=owllogo,
+                    file=geezlogo,
                     link_preview=False,
                     text=f" 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 \n\n 🦉 **Owner : {DEFAULTUSER}**\n\n 🦉  **Bot Ver :** `5.0`\n 🦉  **𝗠odules :** `{len(plugins)}`\n\n 🦉  **Dev : CAN **".format(
                         len(dugmeler),
@@ -521,28 +542,14 @@ with bot:
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"opener")
-            )
-        )
-        async def on_plug_in_callback_query_handler(event):
-            current_page_number = int(unpage)
-            buttons = paginate_help(current_page_number, plugins, "helpme")
-            await event.edit(
-                file=owllogo,
-                buttons=buttons,
-                link_preview=False,
-            )
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"helpme_back\((.+?)\)")
+                data=re.compile(rb"helpme_close\((.+?)\)")
             )
         )
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:  # @Geez-Project
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=owllogo,
+                    file=geezlogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -550,8 +557,8 @@ with bot:
                                        "t.me/infocanubot"),
                             Button.url("🚨 Group support",
                                        "t.me/infoseputarbot")],
-                        [Button.inline("Open Memek Again", data="opener")],
-                        [custom.Button.inline("TUTUP", data="close")],
+                        [custom.Button.inline(
+                            "Close", b"close")],
                     ]
                 )
 
@@ -606,7 +613,7 @@ with bot:
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @tgbot.on(events.CallbackQuery(data="close"))
+        @tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
             await event.edit("Menu Ditutup!", buttons=Button.clear())
 

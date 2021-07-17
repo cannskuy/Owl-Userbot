@@ -553,8 +553,7 @@ with bot:
                 buttons=buttons,
                 link_preview=False,
             )
-           
-        
+
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_back\((.+?)\)")
@@ -572,8 +571,8 @@ with bot:
                                        "t.me/infocanubot"),
                             Button.url("🚨 Group support",
                                        "t.me/infoseputarbot")],
-                           [Button.inline("Open Memek Again", data="opener")],
-                           [custom.Button.inline("TUTUP", data="close")],
+                        [Button.inline("Open Memek Again", data="opener")],
+                        [custom.Button.inline("TUTUP", data="close")],
                     ]
                 )
 

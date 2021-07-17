@@ -509,7 +509,7 @@ with bot:
                     "@dreamingmoon"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=geezlogo,
+                    file=owllogo,
                     link_preview=False,
                     text=f" 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 \n\n 🦉 **Owner : {DEFAULTUSER}**\n\n 🦉  **Bot Ver :** `5.0`\n 🦉  **𝗠odules :** `{len(plugins)}`\n\n 🦉  **Dev : CAN **".format(
                          len(dugmeler),

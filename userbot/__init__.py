@@ -511,8 +511,8 @@ with bot:
                 result = builder.photo(
                     file=geezlogo,
                     link_preview=False,
-                     text=f" 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 \n\n 🦉 **Owner : {DEFAULTUSER}**\n\n 🦉  **Bot Ver :** `5.0`\n 🦉  **𝗠odules :** `{len(plugins)}`\n\n 🦉  **Dev : CAN **".format(
-                        len(dugmeler),
+                    text=f" 🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉 \n\n 🦉 **Owner : {DEFAULTUSER}**\n\n 🦉  **Bot Ver :** `5.0`\n 🦉  **𝗠odules :** `{len(plugins)}`\n\n 🦉  **Dev : CAN **".format(
+                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
@@ -647,4 +647,3 @@ with bot:
             "BOTLOG_CHATID Environment Variable Isn't a "
             "Valid Entity. Please Check Your Environment variables/config.env File.")
         quit(1)
-        

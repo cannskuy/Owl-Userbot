@@ -29,7 +29,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     "╭┈───────────────\n"
-    " “🦉Attantion Please🦉”\n"
+    " “🦉Attention Please🦉”\n"
     "├┈───────────────\n"
     " 𝗱𝗼𝗻’𝘁 𝘀𝗽𝗮𝗺 𝗯𝗲𝗰𝗮𝘂𝘀𝗲 𝘂 𝗰𝗮𝗻 𝗯𝗼𝘁𝗵𝗲𝗿 \n\n"
     f"𝘑𝘪𝘬𝘢 𝘬𝘢𝘮𝘶 𝘮𝘢𝘴𝘪𝘩 𝘮𝘦𝘭𝘢𝘬𝘶𝘬𝘢𝘯 𝘴𝘱𝘢𝘮, 𝘮𝘢𝘬𝘢 𝘣𝘰𝘵 𝘪𝘯𝘪 𝘢𝘬𝘢𝘯 𝘰𝘵𝘰𝘮𝘢𝘵𝘪𝘴 𝘮𝘦𝘮𝘣𝘭𝘰𝘬𝘪𝘳 𝘬𝘢𝘮𝘶, 𝘛𝘦𝘳𝘪𝘮𝘢𝘬𝘢𝘴𝘪𝘩.\n"

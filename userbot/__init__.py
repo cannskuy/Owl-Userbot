@@ -452,7 +452,7 @@ with bot:
                     "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
                 )
 
-        geezlogo = INLINE_PIC
+        owllogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -542,14 +542,29 @@ with bot:
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"helpme_close\((.+?)\)")
+                data=re.compile(rb"opener")
+            )
+        )
+        async def on_plug_in_callback_query_handler(event):
+            current_page_number = int(unpage)
+            buttons = paginate_help(current_page_number, plugins, "helpme")
+            await event.edit(
+                file=owllogo,
+                buttons=buttons,
+                link_preview=False,
+            )
+           
+        
+        @tgbot.on(
+            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                data=re.compile(rb"helpme_back\((.+?)\)")
             )
         )
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:  # @Geez-Project
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=geezlogo,
+                    file=owllogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -557,8 +572,8 @@ with bot:
                                        "t.me/infocanubot"),
                             Button.url("🚨 Group support",
                                        "t.me/infoseputarbot")],
-                        [custom.Button.inline(
-                            "Close", b"close")],
+                           [Button.inline("Open Memek Again", data="opener")],
+                           [custom.Button.inline("TUTUP", data="close")],
                     ]
                 )
 
@@ -613,7 +628,7 @@ with bot:
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @tgbot.on(events.CallbackQuery(data=b"close"))
+        @tgbot.on(events.CallbackQuery(data="close"))
         async def close(event):
             await event.edit("Menu Ditutup!", buttons=Button.clear())
 

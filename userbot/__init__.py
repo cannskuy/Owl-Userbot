@@ -429,7 +429,6 @@ with bot:
         me = bot.get_me()
         uid = me.id
 
-
         owllogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER

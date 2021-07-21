@@ -109,10 +109,8 @@ async def redis(pong):
     await pong.edit("**60% ██████▒▒▒▒**")
     await pong.edit("**80% ████████▒▒**")
     await pong.edit("**100% ██████████**")
-    await pong.edit("mendapatkan informasi jodoh")
-    await pong.edit("jodoh ditemukan")
     await pong.edit("🐣")
-    await asyncio.sleep(2)
+    await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉**\n\n"

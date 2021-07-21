@@ -48,11 +48,12 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Wait ")
-    await pong.edit("bentar")
-    await pong.edit("sabar")
-    await pong.edit("tunggu")
-    await pong.edit("trulala")
+    await pong.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
+    await pong.edit("**20% ██▒▒▒▒▒▒▒▒**")
+    await pong.edit("**40% ████▒▒▒▒▒▒**")
+    await pong.edit("**60% ██████▒▒▒▒**")
+    await pong.edit("**80% ████████▒▒**")
+    await pong.edit("**100% ██████████**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**╭━━━━━━━━━━━━━━━━━╮** \n"
@@ -102,12 +103,13 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Wait ")
-    await pong.edit("bentar")
-    await pong.edit("sabar")
-    await pong.edit("tunggu")
-    await pong.edit("trulala")
-    await pong.edit("🐣")
+    await pong.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
+    await pong.edit("**20% ██▒▒▒▒▒▒▒▒**")
+    await pong.edit("**40% ████▒▒▒▒▒▒**")
+    await pong.edit("**60% ██████▒▒▒▒**")
+    await pong.edit("**80% ████████▒▒**")
+    await pong.edit("**100% ██████████**")
+    await pong.edit("Mendapatkan sinyal anda")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000

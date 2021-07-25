@@ -1,6 +1,6 @@
 {
   "name": "🦉Owl-Userbot🦉",
-  "description": "🚫Owl-Userbot🚫 USERBOT YANG DIBUAT KARNA GABUT SEMATA.",
+  "description": "🦉Owl-Userbot🦉 USERBOT YANG DIBUAT KARNA GABUT SEMATA.",
   "logo": "",
   "keywords": [
     "telegram",
@@ -172,11 +172,11 @@
       "required": false
     },
     "ALIVE_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .geezalive (Isi Terserah)",
+      "description": "Custom Pesan Alive Mu Untuk Perintah .owlalive ",
       "required": false
     },
     "S_PACK_NAME": {
-      "description": "Nama Sticker Pack Mu",
+      "description": "Nama stiker pack loe",
       "required": false
     },
     "G_DRIVE_DATA": {

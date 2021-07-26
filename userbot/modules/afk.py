@@ -64,7 +64,7 @@ async def set_afk(afk_e):
         AFKREASON = string
         await afk_e.edit(f"**__ミAttention 🦉__**\n__{ALIVE_NAME} sedang afk__\n╰⎆ __Reason__ : {AFKREASON}")
     else:
-        await afk_e.edit("🦉 𝘼 𝙁 𝙆\n--------------- \n┣ 𝙋𝙡𝙚𝙖𝙨𝙚, 𝙙𝙤𝙣'𝙩 𝙘𝙤𝙢𝙚 𝙖𝙛𝙩𝙚𝙧 𝙢𝙚. ✨\n---------------")
+        await afk_e.edit("🦉 𝘼 𝙁 𝙆\n╰⎆ 𝙋𝙡𝙚𝙖𝙨𝙚, 𝙙𝙤𝙣'𝙩 𝙘𝙤𝙢𝙚 𝙖𝙛𝙩𝙚𝙧 𝙢𝙚. ✨")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name))
     else:
@@ -165,7 +165,7 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)} Detik`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"🦉 𝘼 𝙁 𝙆\n--------------- \n┣ {ALIVE_NAME} 𝙞'𝙢 𝙫𝙚𝙧𝙮 𝙗𝙪𝙨𝙮\n┣ 𝗦𝗶𝗻𝗰𝗲: {afk_since}\n┣ 𝗥𝗲𝗮𝘀𝗼𝗻: {AFKREASON}\n---------------")
+                    await mention.reply(f"🦉 𝘼 𝙁 𝙆\n╰⎆ {ALIVE_NAME} 𝙞'𝙢 𝙫𝙚𝙧𝙮 𝙗𝙪𝙨𝙮\n╰⎆ 𝗦𝗶𝗻𝗰𝗲: {afk_since}\n╰⎆ 𝗥𝗲𝗮𝘀𝗼𝗻: {AFKREASON}")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})
@@ -240,7 +240,7 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)} Detik`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"🦉𝘼𝙩𝙩𝙚𝙣𝙩𝙞𝙤𝙣\n--------------- \n┣ {ALIVE_NAME} 𝙞'𝙢 𝙫𝙚𝙧𝙮 𝙗𝙪𝙨𝙮\n┣ 𝗦𝗶𝗻𝗰𝗲: {afk_since}\n┣ 𝗥𝗲𝗮𝘀𝗼𝗻: {AFKREASON}\n---------------")
+                    await sender.reply(f"🦉𝘼𝙩𝙩𝙚𝙣𝙩𝙞𝙤𝙣\n╰⎆ {ALIVE_NAME} 𝙞'𝙢 𝙫𝙚𝙧𝙮 𝙗𝙪𝙨𝙮\n╰⎆ 𝗦𝗶𝗻𝗰𝗲: {afk_since}\n╰⎆ 𝗥𝗲𝗮𝘀𝗼𝗻: {AFKREASON}")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
@@ -248,7 +248,7 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"🦉𝘼𝙩𝙩𝙚𝙣𝙩𝙞𝙤𝙣\n--------------- \n┣ {ALIVE_NAME} 𝙞'𝙢 𝙫𝙚𝙧𝙮 𝙗𝙪𝙨𝙮\n┣ 𝗦𝗶𝗻𝗰𝗲: {afk_since}\n┣ 𝗥𝗲𝗮𝘀𝗼𝗻: {AFKREASON}\n---------------")
+                        await sender.reply(f"🦉𝘼𝙩𝙩𝙚𝙣𝙩𝙞𝙤𝙣\n╰⎆ {ALIVE_NAME} 𝙞'𝙢 𝙫𝙚𝙧𝙮 𝙗𝙪𝙨𝙮\n╰⎆ 𝗦𝗶𝗻𝗰𝗲: {afk_since}\n╰⎆ 𝗥𝗲𝗮𝘀𝗼𝗻: {AFKREASON}")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1

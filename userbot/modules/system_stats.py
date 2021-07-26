@@ -276,15 +276,15 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**ㅤㅤㅤㅤ🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉    **\n"
-        f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ ☠️ • `𝘰𝘸𝘯𝘦𝘳    :`[CAN](t.me/inicannn)             ㅤ ║\n"
-        f"╟⟩⟩ 💻 • `𝘴𝘺𝘴𝘵𝘦𝘮    :`Ubuntu 20.10            ║\n"
-        f"╟⟩⟩ ⛄️ • `𝘵𝘦𝘭𝘦𝘵𝘩𝘰𝘯   :`v.{version.__version__}                ㅤㅤ  ║\n"
-        f"╟⟩⟩ 🦦 • `𝘱𝘺𝘵𝘩𝘰𝘯    :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
-        f"╟⟩⟩ 🧞‍♂️ • `𝘣𝘰𝘵      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
-        f"╟⟩⟩ 📚 • `𝘮𝘰𝘥𝘶𝘭𝘦   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
-        f"╚══════════╬════╬══════════╝ \n"
-        f"🔥 : [𝗥𝗘𝗣𝗢-Can](https://github.com/maspion27/Owl-Userbot)\n👥 : [GROUP SUPORT](t.me/infoseputarbot)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/infocanubot)\n"
+        f"┱─────────────────┲ \n"
+        f"⊿◤ ☠️ • `𝘰𝘸𝘯𝘦𝘳    :`[CAN](t.me/inicannn)             ㅤ \n"
+        f"⊿◤ 💻 • `𝘴𝘺𝘴𝘵𝘦𝘮    :`Ubuntu 20.10            \n"
+        f"⊿◤ ⛄️ • `𝘵𝘦𝘭𝘦𝘵𝘩𝘰𝘯   :`v.{version.__version__}                ㅤㅤ  ║\n"
+        f"⊿◤ 🦦 • `𝘱𝘺𝘵𝘩𝘰𝘯    :`v.{python_version()} ㅤㅤㅤㅤ         \n"
+        f"⊿◤ 🧞‍♂️ • `𝘣𝘰𝘵      :`v.{BOT_VER}                ㅤㅤㅤ \n"
+        f"⊿◤ 📚 • `𝘮𝘰𝘥𝘶𝘭𝘦   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   \n"
+        f"╰─────────────────╯ \n"
+        f"🦉: [Owl-Userbot](https://github.com/maspion27/Owl-Userbot)\n 🦉: [Group support](t.me/caritemangobrol)\n 🦉: [Owner](t.me/inicannn)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -319,7 +319,7 @@ async def amireallyalive(alive):
         f"{ALIVE_EMOJI} **Python Version :** `{python_version()}` \n"
         f"{ALIVE_EMOJI} **Telethon Version :** `{version.__version__}` \n"
         f"{ALIVE_EMOJI} **Bot Uptime :** `{uptime}` \n\n"
-        "    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/infoseputarbot)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/infocanubot)** | **[𝗢𝘄𝗻𝗲𝗿](t.me/inicannn)**")
+        "    **[Support](https://t.me/caritemangobrol)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/infoowlubot)** | **[𝗢𝘄𝗻𝗲𝗿](t.me/inicannn)**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

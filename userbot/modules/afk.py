@@ -62,7 +62,7 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"🦉𝘼𝙩𝙩𝙚𝙣𝙩𝙞𝙤𝙣\n--------------- \n┣ {ALIVE_NAME} 𝗔𝗙𝗞 𝗗𝗨𝗟𝗨\n┣ 𝗥𝗲𝗮𝘀𝗼𝗻 : {AFKREASON}\n---------------")
+        await afk_e.edit(f"**__ミAttention 🦉__**\n__{ALIVE_NAME} sedang afk__\n╰⎆ __Reason__ : {AFKREASON}")
     else:
         await afk_e.edit("🦉 𝘼 𝙁 𝙆\n--------------- \n┣ 𝙋𝙡𝙚𝙖𝙨𝙚, 𝙙𝙤𝙣'𝙩 𝙘𝙤𝙢𝙚 𝙖𝙛𝙩𝙚𝙧 𝙢𝙚. ✨\n---------------")
     if user.last_name:
@@ -173,7 +173,7 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"🦉𝘼𝙩𝙩𝙚𝙣𝙩𝙞𝙤𝙣\n--------------- \n┣ {ALIVE_NAME} 𝙞'𝙢 𝙫𝙚𝙧𝙮 𝙗𝙪𝙨𝙮\n┣ 𝗦𝗶𝗻𝗰𝗲: {afk_since}\n┣ 𝗥𝗲𝗮𝘀𝗼𝗻: {AFKREASON}\n---------------")
+                        await mention.reply(f"**__ミAttention 🦉__**\n__{ALIVE_NAME} sedang AFK__\n__Since__ ⎆ {afk_since}\n╰⎆ __Reason__: {AFKREASON}")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1

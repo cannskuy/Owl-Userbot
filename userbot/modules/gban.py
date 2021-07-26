@@ -31,7 +31,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("`Terjadi Kesalahan... Mohon Lapor Ke Grup` @GeezSupportGroup", str(err))
+            return await event.edit("`Terjadi Kesalahan... Mohon lapor ke ` @inicannn", str(err))
     return user_obj, extra
 
 
@@ -82,11 +82,11 @@ async def gben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Ingin Membinasakan Mahkluk Jalang Ini!`")
+        dark = await dc.reply("`Ingin Membinasakan Mahkluk Jalang Ini !`")
     else:
-        dark = await dc.edit("`Memanggil Izrail!!`")
+        dark = await dc.edit("`mencatat nama ke death note !!`")
     me = await userbot.client.get_me()
-    await dark.edit(f"`Binatang ini akan segera musnah!!!`")
+    await dark.edit(f"`Binatang ini akan segera musnah !!!`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -127,7 +127,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`Telah Musnah ✅`")
+                await dark.edit(f"`Telah Musnah 😎`")
             except BaseException:
                 b += 1
     else:
@@ -148,11 +148,11 @@ async def gunben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Memberikan Ampunan Pada Seorang Hamba!`")
+        dark = await dc.reply("`Memberikan ampunan pada seorang babu !`")
     else:
         dark = await dc.edit("`Ruqyah dimulai!`")
     me = await userbot.client.get_me()
-    await dark.edit(f"`Memulai Proses Ruqyah, Pengguna Ini Akan Dapat Bergabung Ke Grup Anda`")
+    await dark.edit(f"`Memulai proses ruqyah, Pengguna Ini Akan Dapat Bergabung Ke Grup Anda`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()

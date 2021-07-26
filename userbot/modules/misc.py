@@ -111,9 +111,9 @@ async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
         "--------------\n"
-        "│    ʀᴇᴘᴏ   : [🦉Owl-Userbot🦉](https://github.com/maspion27/Owl-Userbot)\n"
+        "𝗥𝗲𝗽𝗼   : [🦉Owl-Userbot🦉](https://github.com/maspion27/Owl-Userbot)\n"
         "--------------\n"
-        "│🔥 **ᴏᴡɴᴇʀ :** [Can](t.me/inicannn)\n"
+        "𝗢𝘄𝗻𝗲𝗿  :[Can](t.me/inicannn)\n"
         "--------------\n"
 
     )

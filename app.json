@@ -169,7 +169,7 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "required": false
+      "required": true
     },
     "ALIVE_TEKS_KUSTOM": {
       "description": "Custom Pesan Alive Mu Untuk Perintah .owlalive ",

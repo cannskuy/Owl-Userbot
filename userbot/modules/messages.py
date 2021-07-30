@@ -133,7 +133,7 @@ CMD_HELP.update({"purge": ">`.purge`"
                  "\nUsage: Membersihkan semua pesan mulai dari pesan yang dibalas.",
                  "purgeme": ">`.purgeme <angka>`"
                  "\nUsage: Menghapus jumlah pesan anda, yang mau anda hapus.",
-                 "del": ">`.del`"
+                 "del": ">`Del`"
                  "\nUsage: Menghapus pesan, balas ke pesan.",
                  "edit": ">`.edit <pesan baru>`"
                  "\nUsage: Ganti pesan terakhir Anda dengan <pesan baru>.",

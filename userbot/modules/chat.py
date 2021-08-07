@@ -108,7 +108,7 @@ async def log(log_text):
 @register(outgoing=True, pattern="^.kickme$")
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit(f"`❗ {ALIVE_NAME} Telah Meninggalkan Group...`")
+    await leave.edit(f"`cape ah mo cabut aja bye wlee`")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
@@ -432,7 +432,7 @@ CMD_HELP.update({
 \n↳ : Dapatkan Bot dalam obrolan apa pun.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.logit`\
 \n↳ : Meneruskan pesan yang telah Anda balas di grup log bot Anda.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.exit`\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.kickme`\
 \n↳ : Keluar dari grup.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unmutechat`\
 \n↳ : Membuka obrolan yang dibisukan.\

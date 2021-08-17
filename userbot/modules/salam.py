@@ -12,30 +12,36 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Assalamu'alaikum wr. wb.`")
 
+
 @register(outgoing=True, pattern='^.hy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("𝘩𝘺 𝘮𝘢𝘯𝘪𝘴𝘬𝘶")
+
 
 @register(outgoing=True, pattern='^G(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("𝐍𝐀𝐉𝐈𝐒 𝐊𝐍𝐓𝐋")
 
+
 @register(outgoing=True, pattern='^Z(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("𝐆𝐀 𝐔𝐒𝐀𝐇 𝐍𝐈𝐍𝐆𝐆𝐈 𝐃𝐄𝐏𝐀𝐍 𝐆𝐔𝐀 𝐁𝐆, 𝐋𝐔 𝐁𝐔𝐊𝐀𝐍 𝐒𝐈𝐀𝐏𝐀 𝐒𝐈𝐀𝐏𝐀 𝐃𝐈𝐌𝐀𝐓𝐀 𝐆𝐔𝐀")
+
 
 @register(outgoing=True, pattern='^B(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("𝐁𝐀𝐂𝐎𝐓𝐓 𝐀𝐍𝐉𝐈𝐍𝐆𝐆")
 
+
 @register(outgoing=True, pattern='^X(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("𝐏𝐏 𝐀𝐉𝐀 𝐆𝐀 𝐀𝐃𝐀, 𝐀𝐏𝐀 𝐋𝐀𝐆𝐈 𝐌𝐀𝐒𝐀 𝐃𝐄𝐏𝐀𝐍 𝐔𝐏𝐒")
+
 
 @register(outgoing=True, pattern='^P(?: |$)(.*)')
 async def typewriter(typew):

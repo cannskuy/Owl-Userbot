@@ -12,12 +12,30 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Assalamu'alaikum wr. wb.`")
 
-
 @register(outgoing=True, pattern='^.hy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("𝘩𝘺 𝘮𝘢𝘯𝘪𝘴𝘬𝘶")
 
+@register(outgoing=True, pattern='^G(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("𝐍𝐀𝐉𝐈𝐒 𝐊𝐍𝐓𝐋")
+
+@register(outgoing=True, pattern='^Z(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("𝐆𝐀 𝐔𝐒𝐀𝐇 𝐍𝐈𝐍𝐆𝐆𝐈 𝐃𝐄𝐏𝐀𝐍 𝐆𝐔𝐀 𝐁𝐆, 𝐋𝐔 𝐁𝐔𝐊𝐀𝐍 𝐒𝐈𝐀𝐏𝐀 𝐒𝐈𝐀𝐏𝐀 𝐃𝐈𝐌𝐀𝐓𝐀 𝐆𝐔𝐀")
+
+@register(outgoing=True, pattern='^B(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("𝐁𝐀𝐂𝐎𝐓𝐓 𝐀𝐍𝐉𝐈𝐍𝐆𝐆")
+
+@register(outgoing=True, pattern='^X(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("𝐏𝐏 𝐀𝐉𝐀 𝐆𝐀 𝐀𝐃𝐀, 𝐀𝐏𝐀 𝐋𝐀𝐆𝐈 𝐌𝐀𝐒𝐀 𝐃𝐄𝐏𝐀𝐍 𝐔𝐏𝐒")
 
 @register(outgoing=True, pattern='^P(?: |$)(.*)')
 async def typewriter(typew):
@@ -39,8 +57,18 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "salam":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.P` | `P` | `.hy` \
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.p` | `P` |\
 \n↳ : Untuk Memberi salam.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.L` `L`\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.hy`\
+\n↳ : untuk memanggil seseorang\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `X`\
+\n↳ : untuk mengejek PP\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `B`\
+\n↳ : Bacot gblk\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Z`\
+\n↳ : COBA SENDIRI\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `G`\
+\n↳ : Najis\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.l` `L`\
 \n↳ : Untuk Menjawab Salam."
 })

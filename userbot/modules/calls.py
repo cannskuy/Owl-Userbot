@@ -12,7 +12,6 @@ from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
 from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
-from telethon.tl.types import ChatAdminRights
 from userbot import CMD_HELP
 from userbot.events import register
 
@@ -31,53 +30,51 @@ def user_list(l, n):
 
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
-async def _(rambot):
-    chat = await rambot.get_chat()
+async def _(td):
+    chat = await td.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await rambot.edit(NO_ADMIN)
-    new_rights = ChatAdminRights(invite_users=True)
+        return await td.edit(NO_ADMIN)
     try:
-        await rambot.client(startvc(rambot.chat_id))
-        await rambot.edit("`OBROLAN SUARA DIMULAI, YANG ONCAM LO NGENTOT...`")
+        await td.client(startvc(td.chat_id))
+        await td.edit("`OBROLAN SUARA DIMULAI, YANG ONCAM LO NGENTOT...`")
     except Exception as ex:
-        await rambot.edit(f"`{str(ex)}`")
+        await td.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def _(rambot):
-    chat = await rambot.get_chat()
+async def _(td):
+    chat = await td.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await rambot.edit(NO_ADMIN)
-    new_rights = ChatAdminRights(invite_users=True)
+        return await td.edit(NO_ADMIN)
     try:
-        await rambot.client(stopvc(await get_call(rambot)))
-        await rambot.edit("`OBROLAN SUARA DIHENTIKAN, TYPING AJAYA NGENTOT...`")
+        await td.client(stopvc(await get_call(td)))
+        await td.edit("`OBROLAN SUARA DIHENTIKAN, TYPING AJAYA NGENTOT...`")
     except Exception as ex:
-        await rambot.edit(f"`{str(ex)}`")
+        await td.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
-async def _(rambot):
-    await rambot.edit("`Memulai Invite member group...`")
+async def _(td):
+    await td.edit("`Memulai Invite member group...`")
     users = []
     z = 0
-    async for x in rambot.client.iter_participants(rambot.chat_id):
+    async for x in td.client.iter_participants(td.chat_id):
         if not x.bot:
             users.append(x.id)
     hmm = list(user_list(users, 6))
     for p in hmm:
         try:
-            await rambot.client(invitetovc(call=await get_call(rambot), users=p))
+            await td.client(invitetovc(call=await get_call(td), users=p))
             z += 6
         except BaseException:
             pass
-    await rambot.edit(f"`Menginvite {z} Member`")
+    await td.edit(f"`Menginvite {z} Member`")
 
 
 CMD_HELP.update(

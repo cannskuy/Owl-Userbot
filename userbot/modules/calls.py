@@ -26,11 +26,11 @@ async def get_call(event):
 
 def user_list(l, n):
     for i in range(0, len(l), n):
-        yield l[i: i + n]
+        yield l[i : i + n]
 
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
-async def _(td):
+async def start_voice(td):
     chat = await td.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
@@ -45,7 +45,7 @@ async def _(td):
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def _(td):
+async def stop_voice(td):
     chat = await td.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
@@ -60,7 +60,7 @@ async def _(td):
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
-async def _(td):
+async def vc_invite(td):
     await td.edit("`Memulai Invite member group...`")
     users = []
     z = 0

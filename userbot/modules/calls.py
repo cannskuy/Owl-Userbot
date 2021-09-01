@@ -39,7 +39,7 @@ async def start_voice(td):
         return await td.edit(NO_ADMIN)
     try:
         await td.client(startvc(td.chat_id))
-        await td.edit("`OBROLAN SUARA DIMULAI, YANG ONCAM LO NGENTOT...`")
+        await td.edit("`VOICE CALL STARTED, OPEN CAM NOT ALLOWED...`")
     except Exception as ex:
         await td.edit(f"`{str(ex)}`")
 
@@ -54,7 +54,7 @@ async def stop_voice(td):
         return await td.edit(NO_ADMIN)
     try:
         await td.client(stopvc(await get_call(td)))
-        await td.edit("`OBROLAN SUARA DIHENTIKAN, TYPING AJAYA NGENTOT...`")
+        await td.edit("`VOICE CALL ENDED, THANKS FOR LISTENING...`")
     except Exception as ex:
         await td.edit(f"`{str(ex)}`")
 

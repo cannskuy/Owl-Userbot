@@ -61,7 +61,6 @@ async def stop_voice(c):
         await c.edit("`Voice Chat Stopped...`")
     except Exception as ex:
         print(ex)
-       
 
 
 @register(outgoing=True, groups_only=True, pattern=r"^\.vcinvite")

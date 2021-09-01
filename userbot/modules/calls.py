@@ -29,7 +29,7 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
+@register(outgoing=True, groups_only=True, pattern=r"^\.startvc$")
 async def start_voice(td):
     chat = await td.get_chat()
     admin = chat.admin_rights
@@ -44,7 +44,7 @@ async def start_voice(td):
         await td.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
+@register(outgoing=True, groups_only=True, pattern=r"^\.stopvc$")
 async def stop_voice(td):
     chat = await td.get_chat()
     admin = chat.admin_rights
@@ -59,7 +59,7 @@ async def stop_voice(td):
         await td.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
+@register(outgoing=True, groups_only=True, pattern=r"^\.vcinvite")
 async def vc_invite(td):
     await td.edit("`Memulai Invite member group...`")
     users = []

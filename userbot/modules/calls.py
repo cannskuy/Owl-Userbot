@@ -6,7 +6,6 @@
 # Ini Belum Ke Fix Ya Bg :')
 # Ambil aja gapapa tp Gaguna kaya hidup lu Woakkakaka
 
-import logging
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
 from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc

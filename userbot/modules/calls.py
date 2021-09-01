@@ -15,7 +15,7 @@ from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 from userbot import CMD_HELP
 from userbot.events import register
 
-NO_ADMIN = "`LU BUKAN ADMIN NGENTOT!!`"
+NO_ADMIN = "`YOU ARE NOT ALLOWED TO USE THIS COMMAND`"
 
 
 async def get_call(event):

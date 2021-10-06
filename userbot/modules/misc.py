@@ -113,7 +113,7 @@ async def repo_is_here(wannasee):
         "**__USERBOT INDONESIA__**\n"
         "𝗥𝗲𝗽𝗼 🇮🇩\n"
         "╰⎆ [🦉Owl-Userbot🦉](https://github.com/maspion27/Owl-Userbot)\n"
-        "❏ 𝗢𝘄𝗻𝗲𝗿 ⎆ [Can](t.me/inicannn)\n"
+        "❏ 𝗢𝘄𝗻𝗲𝗿 ⎆ [Can](t.me/thatscan)\n"
     )
 
 

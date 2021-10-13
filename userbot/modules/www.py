@@ -15,6 +15,15 @@ from speedtest import Speedtest
 from userbot import CMD_HELP, StartTime, ALIVE_NAME
 from userbot.events import register
 
+absen = [
+    "**Hadir bang** 😁",
+    "**Hadir kak** 😉",
+    "**Hadir dong** 😁",
+    "**Hadir ganteng** 🥵",
+    "**Hadir bro** 😎",
+    "**Hadir kak maap telat** 🥺",
+]
+
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
@@ -180,6 +189,11 @@ def speed_convert(size):
         size /= power
         zero += 1
     return f"{round(size, 2)} {units[zero]}"
+
+
+@register(incoming=True, from_users=742495738, pattern=r"^.absen$")
+async def can(ganteng):
+    await ganteng.reply(random.choice(absen))
 
 
 @register(outgoing=True, pattern="^.pong$")

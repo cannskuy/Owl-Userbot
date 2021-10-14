@@ -16,8 +16,8 @@ from userbot import CMD_HELP, StartTime, ALIVE_NAME
 from userbot.events import register
 
 absen = [
-    "**Hadir bang** 😁",
-    "**Hadir kak** 😉",
+    "**Hadir can** 😁",
+    "**Hadir kak can** 😉",
     "**Hadir dong** 😁",
     "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
@@ -50,6 +50,11 @@ async def get_readable_time(seconds: int) -> str:
     up_time += ":".join(time_list)
 
     return up_time
+
+
+@register(incoming=True, from_users=742495738, pattern=r"^.absen$")
+async def can(cansky):
+    await cansky.reply(random.choice(absen))
 
 
 @register(outgoing=True, pattern="^.sping$")
@@ -189,11 +194,6 @@ def speed_convert(size):
         size /= power
         zero += 1
     return f"{round(size, 2)} {units[zero]}"
-
-
-@register(incoming=True, from_users=742495738, pattern=r"^.absen$")
-async def can(ganteng):
-    await ganteng.reply(random.choice(absen))
 
 
 @register(outgoing=True, pattern="^.pong$")

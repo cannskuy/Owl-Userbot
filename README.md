@@ -1,15 +1,15 @@
 <a href="https://cooltext.com"><img src="https://images.cooltext.com/5540661.gif" width="802" height="96" alt="King Userbot" /></a>
 
 ![VIEWS](https://komarev.com/ghpvc/?username=maspion27)
-![Repo Size](https://img.shields.io/github/repo-size/maspion27/Owl-Userbot?&style=plastic&logo=github)
-[![GitHub issues](https://img.shields.io/github/issues/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://GitHub.com/maspion27/Owl-Userbot/graphs/contributors/)
-[![PR Open](https://img.shields.io/github/issues-pr/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/pulls)
-[![PR Closed](https://img.shields.io/github/issues-pr-closed/maspion27/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/pulls?q=is:closed)
+![Repo Size](https://img.shields.io/github/repo-size/cannskuy/Owl-Userbot?&style=plastic&logo=github)
+[![GitHub issues](https://img.shields.io/github/issues/cannskuy/Owl-Userbot?&style=plastic&logo=github)](https://github.com/cannskuy/Owl-Userbot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/cannskuy/Owl-Userbot?&style=plastic&logo=github)](https://github.com/maspion27/Owl-Userbot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/cannskuy/Owl-Userbot?&style=plastic&logo=github)](https://GitHub.com/cannskuy/Owl-Userbot/graphs/contributors/)
+[![PR Open](https://img.shields.io/github/issues-pr/cannskuy/Owl-Userbot?&style=plastic&logo=github)](https://github.com/cannskuy/Owl-Userbot/pulls)
+[![PR Closed](https://img.shields.io/github/issues-pr-closed/cannskuy/Owl-Userbot?&style=plastic&logo=github)](https://github.com/cannskuy/Owl-Userbot/pulls?q=is:closed)
 <p align="justify">
-<a href="https://github.com/maspion27/Owl-Userbot/commits/Owl-Userbot"><img src="https://img.shields.io/github/last-commit/maspion27/Owl-Userbot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
-<a href="https://github.com/maspion27/Owl-Userbot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/maspion27/Owl-Userbot/CI/Owl-Userbot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
+<a href="https://github.com/cannskuy/Owl-Userbot/commits/Owl-Userbot"><img src="https://img.shields.io/github/last-commit/maspion27/Owl-Userbot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
+<a href="https://github.com/cannskuy/Owl-Userbot/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/maspion27/Owl-Userbot/CI/Owl-Userbot?style=for-the-badge&logo=github-actions&logoColor=aqua" alt="CI" /></a>
 </p>
 <p align="justify">
 <a href="https://pypi.org/project/Telethon/"><img src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=brightgreen&style=for-the-badge" /></a>
@@ -19,13 +19,13 @@
 </p>
 
 <p align="left">
-  <a href="https://github.com/maspion27/Owl-Userbot/fork"><img src="https://img.shields.io/github/forks/maspion27/Owl-Userbot?label=Fork&style=social"></a>
+  <a href="https://github.com/cannskuy/Owl-Userbot/fork"><img src="https://img.shields.io/github/forks/cannskuy/Owl-Userbot?label=Fork&style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/maspion27/Owl-Userbot"><img src="https://img.shields.io/github/stars/maspion27/Owl-Userbot?style=social"></a>
+  <a href="https://github.com/cannskuy/Owl-Userbot"><img src="https://img.shields.io/github/stars/cannskuy/Owl-Userbot?style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/maspion27/Owl-Userbot/blob/Owl-Userbot/LICENSE"><img src="https://img.shields.io/github/license/maspion27/Owl-Userbot?&style=social&logo=github">
+  <a href="https://github.com/cannskuy/Owl-Userbot/blob/Owl-Userbot/LICENSE"><img src="https://img.shields.io/github/license/cannskuy/Owl-Userbot?&style=social&logo=github">
   </a></p>
 
 ##  🦉 Owl-Userbot 🦉 
@@ -39,7 +39,7 @@
 
 ## <p align="center">DEPLOY TO HEROKU</p>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/maspion27/Owl-Userbot/tree/Owl-Userbot">
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/cannskuy/Owl-Userbot/tree/Owl-Userbot">
   <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 <br>

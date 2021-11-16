@@ -87,7 +87,7 @@ CMD_HELP.update({
 \nUsage: Spam the text word by word.\
 \n\n`.picspam` <count> <link to image/gif>\
 \nUsage: As if text spam was not enough !!\
-\n\n`.delayspam` <delay> <count> <text>\
+\n\n`Delayspam` <delay> <count> <text>\
 \nUsage: `.bigspam` but with custom delay.\
 \n\n\nNOTE : Spam at your own risk !!"
 })

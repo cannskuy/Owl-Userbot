@@ -31,12 +31,6 @@
 ##  🦉 Owl-Userbot 🦉 
 ![Owl-Userbot](https://telegra.ph/file/229e413e9cd607e04cc80.jpg)
 
-### 🛠️ How To Get a STRING SESSION ?
-
-**Generate String Using Replit⤵️**
-
-<a href="https://replit.com/@Vckyou/Geez-String-Session#main.py"><img src="https://img.shields.io/badge/run-string__session.py-lightgreen?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
-
 ## <p align="center">DEPLOY TO HEROKU</p>
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/cannskuy/Owl-Userbot/tree/Owl-Userbot">

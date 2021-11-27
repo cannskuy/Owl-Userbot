@@ -277,14 +277,14 @@ async def amireallyalive(alive):
     output = (
         f"**ㅤㅤㅤㅤ🦉 𝗢𝘄𝗹-𝗨𝘀𝗲𝗿𝗯𝗼𝘁 🦉    **\n"
         f"┱──────────────┲ \n"
-        f"⊿◤ ☠️ • `𝘰𝘸𝘯𝘦𝘳    :`[CAN](t.me/inicannn)             ㅤ \n"
+        f"⊿◤ ☠️ • `𝘰𝘸𝘯𝘦𝘳    :`[CAN](t.me/thatscan)             ㅤ \n"
         f"⊿◤ 💻 • `𝘴𝘺𝘴𝘵𝘦𝘮    :`Ubuntu 20.10            \n"
         f"⊿◤ ⛄️ • `𝘵𝘦𝘭𝘦𝘵𝘩𝘰𝘯   :`v.{version.__version__}                ㅤㅤ  \n"
         f"⊿◤ 🦦 • `𝘱𝘺𝘵𝘩𝘰𝘯    :`v.{python_version()} ㅤㅤㅤㅤ         \n"
         f"⊿◤ 🧞‍♂️ • `𝘣𝘰𝘵      :`v.{BOT_VER}                ㅤㅤㅤ \n"
         f"⊿◤ 📚 • `𝘮𝘰𝘥𝘶𝘭𝘦   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   \n"
         f"╰──────────────╯ \n"
-        f"🦉: [Owl-Userbot](https://github.com/maspion27/Owl-Userbot)\n🦉: [Group support](t.me/caritemangobrol)\n🦉: [Owner](t.me/inicannn)\n"
+        f"🦉: [Owl-Userbot](https://github.com/cannskuy/Owl-Userbot)\n🦉: [Group support](t.me/kiritosupport)\n🦉: [Owner](t.me/thatscan)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -319,7 +319,7 @@ async def amireallyalive(alive):
         f"{ALIVE_EMOJI} **Python Version :** `{python_version()}` \n"
         f"{ALIVE_EMOJI} **Telethon Version :** `{version.__version__}` \n"
         f"{ALIVE_EMOJI} **Bot Uptime :** `{uptime}` \n\n"
-        "    **[Support](https://t.me/caritemangobrol)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/infoowlubot)** | **[𝗢𝘄𝗻𝗲𝗿](t.me/thatscan)**")
+        "    **[Support](https://t.me/kiritosupport)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/kiritoupdate)** | **[𝗢𝘄𝗻𝗲𝗿](t.me/thatscan)**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

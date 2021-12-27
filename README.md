@@ -33,7 +33,7 @@
 
 ## <p align="center">DEPLOY TO HEROKU</p>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/cannskuy/Owl-Deploy">
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/cannskuy/Owl-Userbot-Deploy">
   <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 <br>

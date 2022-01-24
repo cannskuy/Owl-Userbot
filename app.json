@@ -35,6 +35,20 @@
       "value": "Check Di Heroku Dashboard Mu",
       "required": true
     },
+    "LOGSPAMMER": {
+       "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
+       "value": "True",
+       "required": true
+    },
+     "HEROKU_MEMEZ": {
+       "description": "This should be True if the userbot is running on a Heroku Dyno.",
+       "value": "True",
+       "required": true
+    },
+     "CLEAN_WELCOME": {
+       "description": "When a new person joins, the old welcome message is deleted.",
+       "value": "True"
+     },
     "BOTLOG": {
       "description": "Kalo Mau Off in BOTLOG Ganti False",
       "value": "True",
@@ -50,10 +64,19 @@
       "value": "Isi ID Grup Anda, Contoh -100111111111",
       "required": true
     },
+    "TMP_DOWNLOAD_DIRECTORY": {
+       "description": "Download location for many modules (GDrive, .download etc..)",
+       "value": "./downloads/"
+    },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch. Also known as the 'bleep blop, this is a bot...' module.",
       "value": "False",
-      "required": false
+      "required": true
+    },
+    "COUNTRY": {
+       "description": "Set your Country to be used in the .time and .date commands.",
+       "value": "ID",
+       "required": true
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
